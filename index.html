@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Besar Web | Manchester United</title>
+    <link rel="stylesheet" href="assets/css/w3.css">
+    <link rel="icon" href="assets/img/man_utd.jpeg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap">
+</head>
+<style>
+    a {
+        font-family: 'Montserrat',Helvetica,sans-serif;
+        font-size: 14px;
+        font-size: .875rem;
+        font-weight: 600;
+    }
+    h2 {
+        font-family: 'Montserrat',Helvetica,sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+    }
+    .gradient-text {
+      background: linear-gradient(to right, red, black);
+      -webkit-background-clip: text;
+      color: transparent;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .w3-card-4 img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    .card-content {
+        padding: 15px;
+        height: 300px;
+    }
+    .mySlides {
+        display: none;
+        animation: fade-in 1.5s ease-out; /* Tentukan durasi, jenis easing, dan nama keyframe */
+    }
+
+    .w3-col {
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+    @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+</style>
+<body>
+    <div class="w3-container" style="background-color:#231F20; display: flex; text-align: center;
+    padding: 20px; text-align:  center; justify-content: space-around;">
+    <br>
+    <center>
+        <img src="assets/img/teamviewer.png" alt="" width="250px">
+        <img class="w3-round-xlarge" src="assets/img/banner.webp" width="250px" alt="">
+        <img src="assets/img/adidas.png" width="250px" alt="">
+    </center>
+    <br>
+    </div>
+    <div class="w3-bar" style="background-color: #c70101;">
+        <a onclick="movePage('history')" class="w3-bar-item w3-button w3-text-white">HISTORY</a>
+        <a onclick="movePage('old_trafford')" class="w3-bar-item w3-button w3-text-white">OLD TRAFFORD</a>
+        <a onclick="movePage('titles')" class="w3-bar-item w3-button w3-text-white">TITLES</a>
+        <div class="w3-dropdown-hover">
+            <a class="w3-button w3-text-white">PLAYERS</a>
+            <div class="w3-dropdown-content w3-bar-block w3-card-4">
+                <a onclick="movePage('gk')" class="w3-bar-item w3-button">GOALKEEPERS</a>
+                <a onclick="movePage('def')" class="w3-bar-item w3-button">DEFENDERS</a>
+                <a onclick="movePage('mid')" class="w3-bar-item w3-button">MIDFIELDERS</a>
+                <a onclick="movePage('for')" class="w3-bar-item w3-button">FORWARDS</a>
+            </div>
+        </div>
+        <a onclick="movePage('aboutme')" class="w3-bar-item w3-button w3-text-white">ABOUT ME</a>
+      </div>
+      <div class="w3-container w3-center w3-animate-zoom page" id="history" style="margin: 0 auto; max-width: 1000px;">
+        <h2 class="w3-center">HISTORY</h2>
+        <div class="w3-row-padding">
+            <div class="w3-third">
+              <div class="w3-card-4 w3-round-xlarge w3-hover" style="width:300px">
+                <img src="assets/img/berdiri.jpeg" alt="Image">
+                <div class="card-content">
+                  <h3 class="gradient-text">BERDIRI (1878)</h3>
+                  <p class="w3-serif">Manchester United didirikan pada tahun 1878 sebagai Newton Heath LYR Football Club oleh karyawan Lancashire and Yorkshire Railway. Klub ini bermain di divisi amatir dan menjadi profesional pada tahun 1885.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-third">
+              <div class="w3-card-4 w3-round-xlarge" style="width:300px">
+                <img src="assets/img/awal_sukses.jpeg" alt="Image">
+                <div class="card-content">
+                  <h3 class="gradient-text">AWAL KESUKSESAN (1940)</h3>
+                  <p class="w3-serif">Manchester United meraih sukses pada periode ini di bawah manajer Matt Busby. Mereka memenangkan beberapa gelar domestik, termasuk Liga Inggris, Piala FA, dan Piala Liga.</p>
+                </div>
+              </div>
+            </div>
+            <div class="w3-third">
+              <div class="w3-card-4 w3-round-xlarge" style="width:300px">
+                <img src="assets/img/sukses_siralex.jpeg" alt="Image">
+                <div class="card-content">
+                  <h3 class="gradient-text">KESUKSESAN SIR ALEX FERGUSON (1986-2013)</h3>
+                  <p class="w3-serif">Alex Ferguson, manajer terkenal, bergabung dengan klub pada tahun 1986. Di bawah kepemimpinannya, Manchester United memenangkan sejumlah gelar domestik dan internasional, termasuk 13 gelar Liga Inggris dan dua Piala Liga UEFA Champions League.</p>
+                </div>
+              </div>
+            </div>
+          </div>      
+      </div>
+      <div class="w3-container page w3-animate-zoom" id="old_trafford">
+        <h2 class="w3-center">OLD TRAFFORD</h2>
+        <center>
+            <div class="slideshow-container">
+                <div class="mySlides">
+                  <img class="w3-round-large" src="assets/img/old_trafford1.jpg" style="width: 500px;">
+                </div>
+                <div class="mySlides">
+                  <img class="w3-round-large" src="assets/img/old_trafford2.jpg" style="width: 500px;">
+                </div>
+                <div class="mySlides">
+                    <img class="w3-round-large" src="assets/img/old_trafford3.jpg" style="width: 500px;">
+                </div>
+            </div>
+            <div class="w3-container w3-center">
+                <p class="w3-serif">
+                    Old Trafford adalah stadion sepak bola yang terletak di Greater Manchester, Inggris, dan merupakan kandang resmi dari klub sepak bola terkenal, Manchester United. Stadion ini adalah salah satu stadion sepak bola paling ikonik dan terkenal di dunia. Berikut adalah beberapa deskripsi tentang Old Trafford:
+                    
+                    Sejarah:
+                    
+                    Old Trafford dibangun pada tahun 1910 dan telah menjadi markas resmi Manchester United sejak itu.
+                    Sebelum membangun Old Trafford, Manchester United bermain di stadion Bank Street.
+                    Kapasitas:
+                    
+                    Stadion ini memiliki kapasitas besar, dan selama bertahun-tahun telah melihat sejumlah perluasan dan renovasi.
+                    Kapasitasnya dapat menampung lebih dari 74.000 penonton, menjadikannya salah satu stadion terbesar di Inggris.
+                    Arsitektur dan Desain:
+                    
+                    Old Trafford memiliki desain khas dengan tribun yang melingkupi lapangan sepak bola dari keempat sisi.
+                    Tribun terkenal seperti Stretford End dan Sir Alex Ferguson Stand memberikan karakteristik yang unik pada stadion ini.
+                    Prestasi:
+                    
+                    Old Trafford telah menyaksikan berbagai prestasi sukses Manchester United, termasuk kemenangan dalam Liga Inggris, Piala FA, dan Piala Champions UEFA.
+                    Beberapa momen bersejarah klub terjadi di Old Trafford.
+                    Suporter dan Atmosfer:
+                    
+                    Suporter Manchester United, yang dikenal sebagai "Red Devils", memberikan atmosfer yang luar biasa selama pertandingan di Old Trafford.
+                    Terdapat berbagai nyanyian dan tradisi yang mencerminkan gairah dan dukungan suporter.
+                    Fasilitas dan Keunikan:
+                    
+                    Old Trafford dilengkapi dengan fasilitas modern, termasuk area komersial, toko suvenir, dan museum klub.
+                    Patung Sir Matt Busby di luar stadion menjadi salah satu lambang kehormatan bagi manajer legendaris Manchester United.
+                    Acara Non-Sepak Bola:
+                    
+                    Selain pertandingan sepak bola, Old Trafford sering menjadi tuan rumah acara olahraga lainnya, konser, dan acara khusus.
+                    Old Trafford tidak hanya menjadi tempat bagi para pemain sepak bola untuk bertanding, tetapi juga menjadi ikon budaya dan sejarah yang melekat erat dengan identitas klub Manchester United.</p>
+            </div>
+        </center>
+      </div>
+      <div class="w3-container page w3-animate-zoom" id="titles">
+        <h2 class="w3-center">TITLES</h2>
+        <div class="w3-row-padding">
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/trebel.jpeg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>TREBLE WINNER 1999</strong></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/premier_league.jpeg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>20x Premier League Champions</strong></p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/champions_league.jpeg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>3x Champions League Winner</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/club_world.jpeg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>Club World Cup Champions</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/uel.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>UEFA Europa League Champions</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-col s12 m4">
+                <div class="w3-card-4 card w3-round-large">
+                    <img src="assets/img/community.jpg" alt="Gambar 1">
+                    <div class="w3-container">
+                        <p><strong>21x English Super Cup Champions</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="w3-container page w3-animate-bottom" id="gk">
+        <h2 class="w3-center gradient-text">GOALKEEPERS</h2>
+        <div class="w3-center w3-row">
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/bayindir.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>1</strong> Altay Bayindir</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/onana.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>24</strong> Andre Onana</div>
+            </div>
+            <div class="w3-container w3-animate-left  w3-col m4">
+                <img src="assets/img/players/tom_heaton.png" width="100px" alt="" class="w3-round-large">
+                <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>22</strong> Tom Heaton</div>
+            </div>
+        </div>
+        </div>
+        <div class="w3-container page w3-animate-bottom" id="def">
+            <h2 class="w3-center gradient-text">DEFENDERS</h2>
+            <div class="w3-center w3-row">
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/lindelof.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>2</strong> Victor Lindelof</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/maguire.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>5</strong> Harry Maguire</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/martinez.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>6</strong> Lisandro Martinez</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/malacia.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>12</strong> Tyrell Malacia</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/varane.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>19</strong> Raphael Varane</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/dalot.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>20</strong> Diogo Dalot</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/shaw.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>23</strong> Luke Shaw</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/wanbissaka.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>29</strong> Aaron Wan-Bissaka</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/bennet.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>66</strong> Rhys Bennett</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/evans.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>35</strong> Jonny Evans</div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container page w3-animate-bottom" id="mid">
+            <h2 class="w3-center gradient-text">DEFENDERS</h2>
+            <div class="w3-center w3-row">
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/bruno.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>8</strong> Bruno Fernandes</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/eriksen.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>14</strong> Christian Eriksen</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/casemiro.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>18</strong> Casemiro</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/pellistri.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>28</strong> Facundo Pellistri</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/mctominay.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>39</strong> Scott Mctominay</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/mainoo.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>37</strong> Kobbie Mainoo</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/mount.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>7</strong> Mason Mount</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/bennet.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>62</strong> Omari Forson</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/amrabat.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>4</strong> Sofyan Amrabat</div>
+                </div>
+            </div>
+        </div>
+        <div class="w3-container page w3-animate-bottom" id="for">
+            <h2 class="w3-center gradient-text">DEFENDERS</h2>
+            <div class="w3-center w3-row">
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/martial.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>9</strong> Anthony Martial</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/rashford.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>10</strong> Marcus Rashford</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/antony.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>21</strong> Antony</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/garnacho.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>17</strong> Alejadro Garnacho</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/diallo.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>16</strong> Amad Diallo</div>
+                </div>
+                <div class="w3-container w3-animate-left  w3-col m4">
+                    <img src="assets/img/players/hojlund.png" width="100px" alt="" class="w3-round-large">
+                    <div class="w3-text-black w3-animate-opacity w3-margin-top"><strong>11</strong> Rasmus Hojlund</div>
+                </div>
+            </div>
+        </div>
+        <div class="w3=container page w3-animate-top" id="aboutme">
+            <center>
+                <h2>ABOUT ME</h2>
+                <div class="w3-card-4 card w3-round-large" style="width:500px">
+                    <img src="assets/img/old_trafford1.jpg" alt="foto profil"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 16px 16px 0 0;">
+                    </div>
+                    <div class="w3-display-container w3-container w3-text-black">
+                        <div class="w3-display-middle" style="width: 300px; margin-top: 10%;">
+                            <img src="assets/img/me.jpeg" alt="foto profil" width="100%" class="w3-circle"
+                                style="border: 5px solid white; margin-top: 2%;">
+                                <div class="w3-container">
+                                    <h3 class="gradient-text">Muhammad Nazriel Alfarizi</h3>
+                                    <p>Kelas : IF-11</p>
+                                    <p>NIM: 10123442</p>
+                                    <h2 class="gradient-text">UNIVERSITAS KOMPUTER</h2>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+      </div>
+</body>
+<script>
+window.onload = function () {
+    checkHash();
+  };
+
+  function checkHash() {
+    var hash = window.location.hash.substring(1);
+    var validPages = ["history", "old_trafford","titles"]; // Daftar halaman yang valid
+
+    if (validPages.includes(hash)) {
+      movePage(hash);
+    } else {
+      movePage("history"); // Halaman default saat tidak ada hash atau hash tidak valid
+    }
+  }
+
+function movePage(page) {
+    var i;
+    var x = document.getElementsByClassName("page");
+    for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none"; 
+    }
+    document.getElementById(page).style.display = "block"; 
+}
+
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 4000);
+}
+</script>
+</html>
